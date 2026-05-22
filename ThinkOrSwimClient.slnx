@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ThinkOrSwimClient/ThinkOrSwimClient.csproj" />
+  <Project Path="ThinkOrSwimTest/ThinkOrSwimTest.csproj" />
+  <Project Path="ThinkOrSwimTestNuget/ThinkOrSwimTestNuget.csproj" Id="86e5b94d-3d81-40d1-82d6-5bad97c51f36" />
+</Solution>

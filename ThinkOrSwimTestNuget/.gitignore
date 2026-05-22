@@ -1,0 +1,86 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+
+# ReSharper
+_ReSharper*/
+*.ReSharper
+
+# Dotnet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Generated files
+Generated/
+*.generated.cs
+
+# Backup files
+*.bak
+*.tmp
+
+# Local settings
+appsettings.Development.json
+
+# Azure
+ServiceDependencies/
+ServiceDependencies.Local.json
+
+# JetBrains Rider
+*.sln.iml
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# EF Core
+Migrations/
+
+# Node modules (if frontend included)
+node_modules/
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# SQLite databases
+*.db
+*.sqlite
+
+# Secrets
+secrets.json

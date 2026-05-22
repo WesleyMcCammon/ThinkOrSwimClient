@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ThinkOrSwimClient</id>
+    <version>1.0.0</version>
+    <authors>Wesley McCammon</authors>
+    <description>Library with both Debug and Release builds.</description>
+  </metadata>
+  <files>
+    <file src="lib\net6.0\Debug\ThinkOrSwimClient.dll" target="lib\net10.0\Debug" />
+    <file src="lib\net6.0\Release\ThinkOrSwimClient.dll" target="lib\net10.0\Release" />
+  </files>
+</package>
