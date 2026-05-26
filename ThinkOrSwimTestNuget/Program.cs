@@ -9,8 +9,6 @@ if (runLiveTOS)
 {
     thinkOrSwimTest.Start(false);
 }
-else
-    thinkOrSwimTest.TestDataSource();
 
 
 Console.ReadKey();

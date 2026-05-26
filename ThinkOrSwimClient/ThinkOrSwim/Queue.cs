@@ -5,7 +5,7 @@ using System.Collections.Concurrent;
 
 namespace ThinkOrSwim;
 
-class Queue : IEnumerator, IEnumerator<Quote>
+internal class Queue : IEnumerator, IEnumerator<Quote>
 {
     BlockingCollection<Quote> queue = new BlockingCollection<Quote>(new ConcurrentQueue<Quote>());
     Quote current;

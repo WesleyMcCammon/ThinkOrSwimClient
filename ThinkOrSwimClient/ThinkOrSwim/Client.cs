@@ -7,7 +7,7 @@ public enum QuoteType
     Ask
 }
 
-public class Client : IDisposable
+internal class Client : IDisposable
 {
     Feed feed;
 
