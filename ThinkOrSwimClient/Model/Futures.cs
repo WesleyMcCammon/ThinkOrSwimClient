@@ -7,6 +7,7 @@ public class Futures
     private string _description = string.Empty;
     private string _frontMonth = string.Empty;
     private string _category = string.Empty;
+    private bool _active = false;
 
     public string Symbol { get { return _baseSymbol; } }
     public string DisplaySymbol { get { return _displaySymbol; } }
@@ -14,13 +15,15 @@ public class Futures
     public string FrontMonth { get { return _frontMonth; } }
     public string Category { get { return _category; } }
 
-    public Futures(string baseSymbol, string description, string frontMonth, string category)
+    public Futures(string baseSymbol, string description, string frontMonth, string category, bool active = true)
     {
         this._baseSymbol = baseSymbol;
         this._description = description;
         this._frontMonth = frontMonth;
         this._category = category;
+        this._active = active;
 
         this._displaySymbol = baseSymbol.Substring(1, baseSymbol.IndexOf(':') - 1);
+        this._active = active;
     }
 }

@@ -12,9 +12,13 @@ public class ThinkOrSwimService
     private readonly Client _client = new Client();
     private bool _keepGoing = true;
 
-    public ThinkOrSwimService(List<string> tradingSymbols)
+    public ThinkOrSwimService()
     {
-        _tradingSymbols.AddRange(tradingSymbols);
+        var dataSource = new InstrumentDataSource();
+        var indexFutures = dataSource.GetFutures("Index").Select(f => f.Symbol).ToList();
+        var majorForex = dataSource.GetCurrencyPairs("Major").Select(c => c.Symbol).ToList();
+        var combined = indexFutures.Concat(majorForex).ToList();
+        _tradingSymbols.AddRange(combined);
     }
 
     public void Stop()

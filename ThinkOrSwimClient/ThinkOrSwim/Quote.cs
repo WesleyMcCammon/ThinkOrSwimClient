@@ -1,6 +1,6 @@
 ﻿namespace ThinkOrSwim;
 
-public class Quote
+internal class Quote
 {
     public string Symbol { get; protected set; }
     public string Type { get; protected set; }

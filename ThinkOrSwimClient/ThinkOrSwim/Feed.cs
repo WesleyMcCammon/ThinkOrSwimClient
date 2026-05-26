@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 
 namespace ThinkOrSwim;
 
-class Feed : IRTDUpdateEvent, IEnumerable<Quote>
+internal class Feed : IRTDUpdateEvent, IEnumerable<Quote>
 {
     readonly string registryKey = @"HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Tos.RTD\CLSID";
     IRTDServer server;

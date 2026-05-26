@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 namespace ThinkOrSwim;
 
-class Topics
+internal class Topics
 {
     ConcurrentDictionary<long, Tuple<string, string>> data = new ConcurrentDictionary<long, Tuple<string, string>>();
 

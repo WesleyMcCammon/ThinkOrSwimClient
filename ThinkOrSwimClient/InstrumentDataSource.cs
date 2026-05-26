@@ -2,7 +2,7 @@
 
 namespace ThinkOrSwimClient;
 
-public class InstrumentDataSource
+internal class InstrumentDataSource
 {
     private IList<Currency> _currencies = new List<Currency>();
     private IList<CurrencyPair> _currencyPairs = new List<CurrencyPair>();
