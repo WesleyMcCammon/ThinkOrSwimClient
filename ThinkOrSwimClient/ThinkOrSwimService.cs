@@ -12,13 +12,10 @@ public class ThinkOrSwimService
     private readonly Client _client = new Client();
     private bool _keepGoing = true;
 
-    public ThinkOrSwimService()
+    public void SetTradingSymbols(List<string> tradingSymbols)
     {
-        var dataSource = new InstrumentDataSource();
-        var indexFutures = dataSource.GetFutures("Index").Select(f => f.Symbol).ToList();
-        var majorForex = dataSource.GetCurrencyPairs("Major").Select(c => c.Symbol).ToList();
-        var combined = indexFutures.Concat(majorForex).ToList();
-        _tradingSymbols.AddRange(combined);
+        _tradingSymbols.Clear();
+        _tradingSymbols.AddRange(tradingSymbols);
     }
 
     public void Stop()
@@ -125,13 +122,6 @@ public class ThinkOrSwimService
                     symbol ?? string.Empty, 
                     quote.Type.ToString(), 
                     (decimal)quote.Value);
-                //var thinkOrSwimQuoteMessage = new ThinkOrSwimQuoteMessage
-                //{
-                //    Date = DateTime.Now,
-                //    Symbol = symbol ?? String.Empty,
-                //    QuoteType = quote.Type.ToString(),
-                //    Value = (decimal)quote.Value
-                //};
 
                 if (ThinkOrSwimEventHandler != null) ThinkOrSwimEventHandler(thinkOrSwimQuoteMessage);
             }

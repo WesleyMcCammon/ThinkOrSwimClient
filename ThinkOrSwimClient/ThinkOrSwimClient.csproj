@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="InstrumentDataSource.cs" />
+    <Compile Remove="Model\Currency.cs" />
+    <Compile Remove="Model\CurrencyPair.cs" />
+    <Compile Remove="Model\Futures.cs" />
+  </ItemGroup>
+
 </Project>

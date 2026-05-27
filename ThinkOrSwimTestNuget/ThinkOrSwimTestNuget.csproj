@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ThinkOrSwimClient" Version="2.0.1" />
+    <PackageReference Include="MarketWatchDataSource" Version="1.0.1" />
+    <PackageReference Include="ThinkOrSwimClient" Version="3.0.1" />
   </ItemGroup>
 
 </Project>
